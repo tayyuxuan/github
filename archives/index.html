@@ -1,0 +1,63 @@
+
+<html>
+<head>
+  <title>My Test App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1>Cat Voting App</h1>
+  <br>
+  <h2>A simple app to vote for apps</h2>
+    <table>
+      <tr>
+        <td>
+          <img height="60%" src="https://goo.gl/qoo68N" alt="Wrong">
+        </td>
+        <td>
+          <button onclick="increaseCount()">Me!</button>
+        <br>
+        Count: <span id="catOneCount">0</span></td>
+      <td>
+        <img height="65%" src="https://goo.gl/D0MnS9" alt="Wrong">
+      <td>
+        <button>Me!</button>
+        <br>
+        Count:1</td>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img height="90%" src="https://goo.gl/eBKrQB" alt="Wrong">
+      </td>
+        <td>
+          <button>Me!</button>
+          <br>
+          Count:2
+      </td>
+      <td>
+        <img height="35%" src="https://goo.gl/l4kMuv" alt="Wrong">
+      </td>
+      <td>
+        <button>Me!</button>
+        <br>
+        Count:3
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <button>
+    <span>test</span>
+    <span>test2</span>
+  </button>
+  <script>
+    var cat1 = 0
+    function increaseCount(){
+      cat1 += 1
+      $("#catOneCount").html(cat1)
+    }
+  </script>
+</body>
+</html>

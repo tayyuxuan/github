@@ -1,0 +1,129 @@
+<html>
+<head>
+  <title>Temple Of The Mighty Lord Dion</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="cover.css" rel="stylesheet">
+  <style>
+    .sameHeight{
+      height:400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+
+     <div class="site-wrapper-inner">
+
+       <div class="cover-container">
+
+         <div class="masthead clearfix">
+           <div class="inner">
+             <h3 class="masthead-brand">The Only Resume You Need</h3>
+             <nav>
+               <ul class="nav masthead-nav">
+                 <li id = "navHomeTab"><a href="#" onclick = "gotoHome()"><i class="fa fa-home"></i>Home</a></li>
+                 <li id = "navEducationTab"><a href="#"onclick = "gotoEducation()"><i class="fa fa-book"></i>Education</a></li>
+                 <li id = "navSkillsTab"><a href="#"onclick = "gotoSkills()"><i class="fa fa-wrench"></i>Skills</a></li>
+               </ul>
+             </nav>
+           </div>
+         </div>
+
+         <div class="inner cover" id="home">
+           <center>
+             <img src="http://bit.ly/2pCoeVC" alt="Wrong"class="img-responsive img-circle">
+           </center>
+           <h1 class="cover-heading">Not My Resume</h1>
+           <p class="lead">This is the front page of a legend in making, Please pray 3 times before accessing</p>
+           <p class="lead">
+             <a href="#" class="btn btn-lg btn-default">Read More</a>
+           </p>
+         </div>
+
+         <div class="mastfoot">
+           <div class="inner">
+             <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+           </div>
+         </div>
+
+         <div class="inner cover" id="education">
+           <center>
+             <img src="http://bit.ly/2pCoeVC" alt="Wrong"class="img-responsive img-circle">
+           </center>
+           <h1 class="cover-heading">My Education</h1>
+           <p class="lead">My Records are vast and wide, be overwhelmed by my knowledge level</p>
+           <p class="lead">
+             <a href="#" class="btn btn-lg btn-default">Pray More</a>
+           </p>
+         </div>
+
+         <div class="mastfoot">
+           <div class="inner">
+             <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+           </div>
+         </div>
+
+         <div class="inner cover" id="skills">
+           <center>
+             <img src="http://bit.ly/2pCoeVC" alt="Wrong"class="img-responsive img-circle">
+           </center>
+           <h1 class="cover-heading">My skills</h1>
+           <p class="lead">I am a master of all trades, name it and i can do it!</p>
+           <p class="lead">
+             <a href="#" class="btn btn-lg btn-default">Think More</a>
+           </p>
+         </div>
+
+         <div class="mastfoot">
+           <div class="inner">
+             <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+           </div>
+         </div>
+
+       </div>
+
+     </div>
+
+   </div>
+
+  <script>
+    $(function(){
+      $("#education").hide()
+      $("#skills").hide()
+    })
+
+    function gotoHome(){
+      $("#education").hide()
+      $("#skills").hide()
+      $("#home").slideDown()
+      $("#navHomeTab").attr('class','active');
+      $("#navEducationTab").attr('class','');
+      $("#navSkillsTab").attr('class','');
+    }
+    function gotoEducation(){
+      $("#home").hide()
+      $("#skills").hide()
+      $("#education").slideDown()
+      $("#navHomeTab").attr('class','');
+      $("#navEducationTab").attr('class','active');
+      $("#navSkillsTab").attr('class','');
+    }
+    function gotoSkills(){
+      $("#home").hide()
+      $("#education").hide()
+      $("#skills").slideDown()
+      $("#navHomeTab").attr('class','');
+      $("#navEducationTab").attr('class','');
+      $("#navSkillsTab").attr('class','active');
+    }
+
+
+
+  </script>
+
+</body>
+</html>
